@@ -41,3 +41,9 @@ numbers.forEach(num => console.log(num)); // Logs each number in the array
 // 10. sort() - Sort the array in ascending order
 numbers.sort((a, b) => a - b);
 console.log("After sort (ascending):", numbers); // [10, 20, 30, 40, 50]
+
+let fruits = ["apple", "banana", "mango", "orange"];
+delete fruits[1];  // Removes "banana"
+console.log(fruits);  // ["apple", undefined, "mango", "orange"]
+console.log(fruits.length);  // 4 (length remains unchanged)
+
